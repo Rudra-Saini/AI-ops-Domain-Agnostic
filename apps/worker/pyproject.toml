@@ -1,0 +1,22 @@
+[project]
+name = "aiops-worker"
+version = "0.1.0"
+description = "Background Task Worker for AIOps Platform"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "rq>=1.16.1",
+    "redis>=5.0.3",
+    "sqlalchemy>=2.0.28",
+    "asyncpg>=0.29.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "fakeredis>=2.21.3",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
