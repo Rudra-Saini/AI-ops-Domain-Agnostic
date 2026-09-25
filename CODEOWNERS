@@ -1,0 +1,17 @@
+# Lines starting with '#' are considered comments.
+# Each line is a pattern followed by one or more owners.
+# More specific owners take precedence over general owners.
+
+# Global fallback: team
+* @Sauravgit123
+
+# Core Services
+apps/ai-worker/ @Rudra-Saini
+apps/api/ @Taranay
+apps/worker/ @Taranay
+apps/web/ @Vivek
+
+# Infrastructure & DevOps
+infrastructure/ @Sauravgit123
+.github/ @Sauravgit123
+docker-compose.yml @Sauravgit123
